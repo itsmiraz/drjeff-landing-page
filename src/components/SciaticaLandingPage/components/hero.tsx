@@ -70,40 +70,16 @@ const Hero = () => {
             approach.
           </p>
 
-          {/* Mobile Arrow - Only show on mobile */}
-          {/* <div className=" md:hidden w-full flex justify-center mb-6">
-            <motion.div
-              animate={{
-                y: [-5, 5, -5],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            >
-              <svg
-                width="40"
-                height="80"
-                viewBox="0 0 40 80"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20 0v60M20 60L5 45M20 60l15-15"
-                  stroke="#A65D57"
-                  strokeWidth="6"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </motion.div>
-          </div> */}
+          
         </motion.div>
 
         {/*Quiz section */}
 
-        <div className="max-w-[1070px] px-[20px] mx-auto  flex md:flex-row flex-col-reverse justify-between gap-y-[50px] items-center ">
+        <motion.div 
+           initial={{ opacity: 0, y: 20 }}
+           animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
+           transition={{ duration: 0.7,delay:0.3 }}
+        className="max-w-[1070px] px-[20px] mx-auto  flex md:flex-row flex-col-reverse justify-between gap-y-[50px] items-center ">
           <div>
             <h2
               className={`font-plantinMTpro font-serif text-[24px] md:text-[26px] text-[#1B365D] leading-[36px] font-bold `}
@@ -135,7 +111,7 @@ const Hero = () => {
           <div id="quiz-section" className="w-full md:max-w-[413px]">
             <Quiz />
           </div>
-        </div>
+        </motion.div>
       </div>
     </main>
   );

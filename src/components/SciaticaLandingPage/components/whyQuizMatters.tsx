@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
@@ -79,7 +79,12 @@ const WhyQuizMatters = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {data.map((item, i) => (
-              <div className="bg-[#F5F7F9] md:w-[413px] p-[20px] rounded-[40px]">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
+                transition={{ duration: 0.7, delay: i * 0.6 }}
+                className="bg-[#F5F7F9] md:w-[413px] p-[20px] rounded-[40px]"
+              >
                 <div className="w-full  relative">
                   <Image
                     src={item.img}
@@ -95,7 +100,7 @@ const WhyQuizMatters = () => {
                     {item.title}
                   </h3>
                 </div>
-              </div>
+              </motion.div>
             ))}
 
             {/* <Card className="bg-white border-none shadow-lg overflow-hidden rounded-[1.5rem] transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
@@ -146,7 +151,11 @@ const WhyQuizMatters = () => {
         </motion.div>
 
         <div className="relative">
-          <div className="max-w-[857px] px-[16px] relative pt-[100px]  pb-[56px] mt-[232px] ctaDropShadow mx-auto rounded-[20px] bg-white">
+          <motion.div
+           initial={{ opacity: 0, y: 20 }}
+           animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
+           transition={{ duration: 0.7, delay: 0.6 }}
+          className="max-w-[857px] px-[16px] relative pt-[100px]  pb-[56px] mt-[232px] ctaDropShadow mx-auto rounded-[20px] bg-white">
             <div className="-translate-x-1/2 left-1/2 -top-24 absolute">
               <Image
                 className="max-w-[184px] mx-auto"
@@ -171,63 +180,22 @@ const WhyQuizMatters = () => {
             >
                Yes, I Want My Personalized Sciatica Solution! <LeftArrow />
             </button>
-          </div>
-          <div className="absolute md:block hidden left-10 top-0">
-            <LeftPointer/>
-          </div>
-          <div className="absolute md:block hidden right-10 top-0">
-
-            <RightPointer/>
-          </div>
+          </motion.div>
+          <motion.div 
+           initial={{ opacity: 0, y: 20 }}
+           animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
+           transition={{ duration: 0.7, delay: 0.6 }}
+          className="absolute md:block hidden left-10 top-0">
+            <LeftPointer />
+          </motion.div>
+          <motion.div
+           initial={{ opacity: 0, y: 20 }}
+           animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
+           transition={{ duration: 0.7, delay: 0.6 }}
+          className="absolute md:block hidden right-10 top-0">
+            <RightPointer />
+          </motion.div>
         </div>
-
-        {/* <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
-          transition={{ duration: 0.7, delay: 0.8 }}
-          className="bg-white p-8 rounded-[1.5rem] shadow-lg mb-16"
-        >
-          <div className="flex flex-col md:flex-row items-start gap-8">
-            <div className="w-full md:w-[60%] flex items-center">
-              <div className="w-24 h-24 md:w-32 md:h-32 bg-gray-200 rounded-full flex-shrink-0 flex items-center justify-center mr-4 md:mr-6 relative overflow-hidden">
-                <Image
-                  src="/patient.png"
-                  alt="Patient Testimonial"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div>
-                <blockquote
-                  className={`${plantinMTPro.variable} font-serif text-xl md:text-2xl font-bold italic text-[#1B365D] mb-2`}
-                >
-                  "I went from barely walking to pain-free in weeks!"
-                </blockquote>
-                <p className="text-base md:text-lg text-[#7C9885]">
-                  - Tony R., Actual Patient
-                </p>
-              </div>
-            </div>
-            <div className="w-full md:w-[40%] flex flex-col justify-center">
-              <p className="text-lg mb-4">
-                Don't let sciatica control another day of your life. Take the
-                first step towards relief now.
-              </p>
-              <Button
-                onClick={scrollToQuiz}
-                className={cn(
-                  "bg-[#D4AA4F] hover:bg-[#c29a45] text-white transition-all duration-300 shadow-md",
-                  "rounded-[1rem]", // Smaller border radius
-                  `${plantinMTPro.variable} font-serif w-full text-sm md:text-base py-4 min-h-[60px] leading-tight font-bold`
-                )}
-              >
-                Yes, I Want My Personalized
-                <br />
-                Sciatica Solution!
-              </Button>
-            </div>
-          </div>
-        </motion.div> */}
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
