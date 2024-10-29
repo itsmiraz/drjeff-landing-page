@@ -80,7 +80,8 @@ const WhyQuizMatters = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {data.map((item, i) => (
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
+              key={i} 
+              initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
                 transition={{ duration: 0.7, delay: i * 0.6 }}
                 className="bg-[#F5F7F9] md:w-[413px] p-[20px] rounded-[40px]"
@@ -93,7 +94,7 @@ const WhyQuizMatters = () => {
                     priority
                   />
                 </div>
-                <div className="px-[39px] pt-6 pb-2">
+                <div className="px-[20px] md:px-[39px] pt-6 pb-2">
                   <h3
                     className={`${plantinMTPro.variable} text-center font-serif text-xl font-bold mb-2`}
                   >
