@@ -60,8 +60,8 @@ const WhyQuizMatters = () => {
   ];
 
   return (
-    <section className="w-full relative pt-[100px]">
-      <div className="max-w-[1470px] mx-auto px-4 md:px-8 lg:px-16 py-16">
+    <section className="w-full  relative pt-[100px]">
+      <div className="max-w-[1470px] mx-auto px-[20px] md:px-8 lg:px-16 py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
@@ -77,7 +77,7 @@ const WhyQuizMatters = () => {
             <UnderLineGraphic />
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {data.map((item, i) => (
               <div className="bg-[#F5F7F9] md:w-[413px] p-[20px] rounded-[40px]">
                 <div className="w-full  relative">
@@ -146,7 +146,7 @@ const WhyQuizMatters = () => {
         </motion.div>
 
         <div className="relative">
-          <div className="max-w-[857px] relative pt-[100px]  pb-[56px] mt-[232px] ctaDropShadow mx-auto rounded-[20px] bg-white">
+          <div className="max-w-[857px] px-[16px] relative pt-[100px]  pb-[56px] mt-[232px] ctaDropShadow mx-auto rounded-[20px] bg-white">
             <div className="-translate-x-1/2 left-1/2 -top-24 absolute">
               <Image
                 className="max-w-[184px] mx-auto"
@@ -157,9 +157,9 @@ const WhyQuizMatters = () => {
             <p className="text-[#7C9885] text-[20px] text-center font-bold font-plantinMTpro font-serif">
               Tony R., Actual Patient
             </p>
-            <h3 className="text-primaryColor pb-[23px] pt-[9px] font-bold text-[36px] text-center ">
+            <h3 className="text-primaryColor pb-[23px] pt-[9px] font-bold text-[24px] md:text-[36px] text-center ">
               "I went from barely walking to pain-
-              <br /> free in weeks!"
+              <br className="md:block hidden" /> free in weeks!"
             </h3>
             <p className="text-center text-[16px] font-sourceSansPro text-primaryColor">
               Don't let sciatica control another day of your life. Take the
@@ -167,15 +167,15 @@ const WhyQuizMatters = () => {
             </p>
             <button
               onClick={scrollToQuiz}
-              className="font-sourceSansPro mx-auto mt-[34px] flex items-center gap-x-[10px] font-bold text-white bg-[#D4AA4F] py-[13px] px-[24px] rounded-full "
+              className="font-sourceSansPro text-[14px] mx-auto mt-[34px] flex items-center gap-x-[10px] font-bold text-white bg-[#D4AA4F] py-[13px] px-[4px] md:px-[24px] rounded-full "
             >
                Yes, I Want My Personalized Sciatica Solution! <LeftArrow />
             </button>
           </div>
-          <div className="absolute left-10 top-0">
+          <div className="absolute md:block hidden left-10 top-0">
             <LeftPointer/>
           </div>
-          <div className="absolute right-10 top-0">
+          <div className="absolute md:block hidden right-10 top-0">
 
             <RightPointer/>
           </div>

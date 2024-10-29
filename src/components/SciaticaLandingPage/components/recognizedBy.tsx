@@ -2,6 +2,9 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { plantinMTPro } from "@/fonts/fonts";
+import LogosTop from '@/assets/images/logo/loogs-top.png'
+import LogosBottom from '@/assets/images/logo/logos-bottom.png'
+
 const RecognizedBy = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -55,9 +58,9 @@ const RecognizedBy = () => {
   return (
     <motion.section
       initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? -100 : 100 }}
+      animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0: 100 }}
       transition={{ duration: 0.7, delay: 0.6 }}
-      className="w-full  rounded-[20px] drop-shadow-md mx-auto max-w-[1300px] bg-white py-8"
+      className="w-full  rounded-[20px] drop-shadow-md mx-auto md:max-w-[1300px] bg-white py-8"
     >
       <div className="max-w-[1270px] mx-auto px-4 md:px-8 lg:px-16 py-4 md:py-8">
         {/* Adjusted padding for mobile */}
@@ -68,7 +71,7 @@ const RecognizedBy = () => {
           Dr. Jeff's Expertise Recognized By
         </h3>
        
-        <div className="flex flex-wrap justify-center items-center gap-2 md:gap-4">
+        <div className="md:flex hidden flex-wrap justify-center items-center gap-2 md:gap-4">
           {logos.map((logo, index) => (
             <motion.div
               key={index}
@@ -92,6 +95,10 @@ const RecognizedBy = () => {
               </div>
             </motion.div>
           ))}
+        </div>
+        <div className="md:hidden mt-[12px] space-y-[10px] flex flex-col justify-center items-center">
+          <Image alt="" src={LogosTop}/>
+          <Image alt="" src={LogosBottom}/>
         </div>
       </div>
     </motion.section>

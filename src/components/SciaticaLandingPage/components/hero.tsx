@@ -46,7 +46,7 @@ const Hero = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
-      className="py-12 md:px-8 lg:px-16 mx-auto h-[1058px] md:h-[985px] relative"
+      className="py-12 md:px-8 lg:px-16 mx-auto  md:h-[985px] relative"
     >
       <div className="max-w-[1270px] mx-auto relative z-10">
         <motion.div
