@@ -14,12 +14,11 @@ export default function SciaticaLandingPage() {
     <div
       className={`min-h-screen mx-auto max-w-[2000px] bg-white text-[#1B365D] ${sourceSansPro.variable} font-sans`}
     >
-      {/* Top Banner */}
       <TopBanner />
       <Hero />
-      <RecognizedBy />
+      {/* <RecognizedBy />
       <WhyQuizMatters />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

@@ -94,13 +94,13 @@ export default function Quiz() {
           <div className="flex space-x-4 mb-8">
             <Button
               onClick={() => handleYesNo(true)}
-              className="w-full md:h-[50px]  bg-[#D4AA4F] hover:bg-[#c29a45] leading-[24px] text-white  px-[69px] py-[12px] font-bold text-[16px] rounded-full"
+              className="w-full md:h-[50px]  bg-[#D4AA4F] hover:bg-[#c29a45] leading-[24px] text-white  px-[50px] md:px-[69px] py-[12px] font-bold text-[16px] rounded-full"
             >
               Yes
             </Button>
             <Button
               onClick={() => handleYesNo(false)}
-              className="w-full  md:h-[50px] bg-[#F5F7F9] hover:bg-[#e6e6e6] leading-[24px] text-primaryColor px-[69px] py-[12px] font-bold text-[16px] rounded-full"
+              className="w-full  md:h-[50px] bg-[#F5F7F9] hover:bg-[#e6e6e6] leading-[24px] text-primaryColor px-[50px] md:px-[69px] py-[12px] font-bold text-[16px] rounded-full"
             >
               No
             </Button>
