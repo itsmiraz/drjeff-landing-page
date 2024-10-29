@@ -94,7 +94,7 @@ const WhyQuizMatters = () => {
                     priority
                   />
                 </div>
-                <div className="px-[20px] md:px-[39px] pt-6 pb-2">
+                <div className="px-[5px] md:px-[39px] pt-6 pb-2">
                   <h3
                     className={`${plantinMTPro.variable} text-center font-serif text-xl font-bold mb-2`}
                   >

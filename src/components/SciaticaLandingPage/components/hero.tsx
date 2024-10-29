@@ -104,7 +104,7 @@ const Hero = () => {
                 </li>
               ))}
             </ul>
-            <button className="font-sourceSansPro flex items-center gap-x-[10px] font-bold text-white bg-[#D4AA4F] py-[13px] px-[24px] rounded-full ">
+            <button className="font-sourceSansPro text-center justify-center flex items-center gap-x-[10px] font-bold text-white whitespace-nowrap bg-[#D4AA4F] py-[13px] px-[4px] md:w-fit w-full md:px-[24px] rounded-full ">
               Start your 60-Second sciatica quiz now <LeftArrow />
             </button>
           </div>
