@@ -70,7 +70,7 @@ const WhyQuizMatters = () => {
         >
           <div className="flex flex-col mb-[40px] justify-center items-center">
             <h2
-              className={`${plantinMTPro.variable} font-serif text-3xl font-bold text-center `}
+              className={`font-plantinMTpro font-serif mb-[6px] text-3xl font-bold text-center `}
             >
               Why This Quiz Matters
             </h2>
@@ -177,7 +177,7 @@ const WhyQuizMatters = () => {
             </p>
             <button
               onClick={scrollToQuiz}
-              className="font-sourceSansPro text-[14px] mx-auto mt-[34px] flex items-center gap-x-[10px] font-bold text-white bg-[#D4AA4F] py-[13px] px-[4px] w-full whitespace-nowrap md:px-[24px] rounded-full "
+              className="font-sourceSansPro md:w-fit text-[14px] mx-auto mt-[34px] flex items-center gap-x-[10px] font-bold text-white bg-[#D4AA4F] py-[13px] px-[4px] w-full whitespace-nowrap md:px-[24px] rounded-full "
             >
                Yes, I Want My Personalized Sciatica Solution! <LeftArrow />
             </button>
