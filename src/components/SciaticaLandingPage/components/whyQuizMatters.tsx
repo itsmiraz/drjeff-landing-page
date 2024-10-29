@@ -70,7 +70,7 @@ const WhyQuizMatters = () => {
         >
           <div className="flex flex-col mb-[40px] justify-center items-center">
             <h2
-              className={`font-plantinMTpro font-serif mb-[6px] text-3xl font-bold text-center `}
+              className={`font-plantinMTpro font-serif mb-[6px] text-[26px] md:text-4xl font-bold text-center `}
             >
               Why This Quiz Matters
             </h2>
