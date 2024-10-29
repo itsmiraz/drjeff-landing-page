@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.ctaDropShadow {
+    box-shadow: 20px 24px 84px 0px #1B365D14;
+
+}

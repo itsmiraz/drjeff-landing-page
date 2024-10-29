@@ -54,10 +54,10 @@ const RecognizedBy = () => {
 
   return (
     <motion.section
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? -100 : 100 }}
       transition={{ duration: 0.7, delay: 0.6 }}
-      className="w-full rounded-[20px] drop-shadow-md mx-auto max-w-[1300px] bg-white py-8"
+      className="w-full  rounded-[20px] drop-shadow-md mx-auto max-w-[1300px] bg-white py-8"
     >
       <div className="max-w-[1270px] mx-auto px-4 md:px-8 lg:px-16 py-4 md:py-8">
         {/* Adjusted padding for mobile */}
@@ -67,6 +67,7 @@ const RecognizedBy = () => {
           {/* Reduced font size */}
           Dr. Jeff's Expertise Recognized By
         </h3>
+       
         <div className="flex flex-wrap justify-center items-center gap-2 md:gap-4">
           {logos.map((logo, index) => (
             <motion.div

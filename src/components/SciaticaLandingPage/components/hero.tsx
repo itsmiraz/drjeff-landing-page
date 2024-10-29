@@ -46,18 +46,9 @@ const Hero = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
-      className="py-12 px-4 md:px-8 lg:px-16 mx-auto relative"
+      className="py-12 px-4 md:px-8 lg:px-16 mx-auto md:h-[985px] relative"
     >
-      {/* Add background pattern container */}
-      {/* <div
-      className="absolute inset-0 opacity-5 pointer-events-none"
-      style={{
-        backgroundImage: `url('/')`,
-        backgroundSize: "200px",
-        backgroundRepeat: "repeat",
-        backgroundPosition: "center",
-      }}
-    /> */}
+  
 
       <div className="max-w-[1270px] mx-auto relative z-10">
         <motion.div
@@ -132,7 +123,7 @@ const Hero = () => {
               Start your 60-Second sciatica quiz now <LeftArrow />
             </button>
           </div>
-         <div className="max-w-[413px]">
+         <div id="quiz-section" className="max-w-[413px]">
          <Quiz />
          </div>
         </div>
