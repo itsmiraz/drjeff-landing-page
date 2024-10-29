@@ -152,10 +152,11 @@ const WhyQuizMatters = () => {
 
         <div className="relative">
           <motion.div
-           initial={{ opacity: 0, y: 20 }}
-           animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
-           transition={{ duration: 0.7, delay: 0.6 }}
-          className="max-w-[857px] px-[16px] relative pt-[100px]  pb-[56px] mt-[232px] ctaDropShadow mx-auto rounded-[20px] bg-white">
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
+            transition={{ duration: 0.7, delay: 0.6 }}
+            className="max-w-[857px] px-[16px] relative pt-[100px]  pb-[56px] mt-[232px] ctaDropShadow mx-auto rounded-[20px] bg-white"
+          >
             <div className="-translate-x-1/2 left-1/2 -top-24 absolute">
               <Image
                 className="max-w-[184px] mx-auto"
@@ -176,23 +177,25 @@ const WhyQuizMatters = () => {
             </p>
             <button
               onClick={scrollToQuiz}
-              className="font-sourceSansPro text-[14px] mx-auto mt-[34px] flex items-center gap-x-[10px] font-bold text-white bg-[#D4AA4F] py-[13px] px-[4px] md:px-[24px] rounded-full "
+              className="font-sourceSansPro text-[14px] mx-auto mt-[34px] flex items-center gap-x-[10px] font-bold text-white bg-[#D4AA4F] py-[13px] px-[4px] w-full whitespace-nowrap md:px-[24px] rounded-full "
             >
                Yes, I Want My Personalized Sciatica Solution! <LeftArrow />
             </button>
           </motion.div>
-          <motion.div 
-           initial={{ opacity: 0, y: 20 }}
-           animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
-           transition={{ duration: 0.7, delay: 0.6 }}
-          className="absolute md:block hidden left-10 top-0">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
+            transition={{ duration: 0.7, delay: 0.6 }}
+            className="absolute md:block hidden left-10 top-0"
+          >
             <LeftPointer />
           </motion.div>
           <motion.div
-           initial={{ opacity: 0, y: 20 }}
-           animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
-           transition={{ duration: 0.7, delay: 0.6 }}
-          className="absolute md:block hidden right-10 top-0">
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
+            transition={{ duration: 0.7, delay: 0.6 }}
+            className="absolute md:block hidden right-10 top-0"
+          >
             <RightPointer />
           </motion.div>
         </div>
