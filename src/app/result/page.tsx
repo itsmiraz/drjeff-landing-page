@@ -1,4 +1,5 @@
 import Hero from "@/components/ResultPage/components/hero";
+import MeetDrJeff from "@/components/ResultPage/components/meetDrJeff";
 import TestimonialSection from "@/components/ResultPage/components/testimonialSection";
 import WhyTrustUs from "@/components/ResultPage/components/whyTrust";
 import TopBanner from "@/components/SciaticaLandingPage/components/topBanner";
@@ -13,6 +14,7 @@ const Result = () => {
       <TopBanner />
       <Hero />
       <WhyTrustUs />
+      <MeetDrJeff/>
       <TestimonialSection />
     </main>
   );
