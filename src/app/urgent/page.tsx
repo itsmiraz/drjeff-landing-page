@@ -1,4 +1,5 @@
 import TopBanner from "@/components/SciaticaLandingPage/components/topBanner";
+import Faq from "@/components/urgentPage/faq";
 import UrgentHero from "@/components/urgentPage/hero";
 import Satisfaction from "@/components/urgentPage/satisfaction";
 import StateMent from "@/components/urgentPage/stateMent";
@@ -20,6 +21,7 @@ const Urgent = () => {
       <Satisfaction/>
       <SuccessStory/>
       <StateMent/>
+      <Faq/>
     </main>
   );
 };
