@@ -1,7 +1,9 @@
 import Hero from "@/components/ResultPage/components/hero";
 import MeetDrJeff from "@/components/ResultPage/components/meetDrJeff";
+import Satisfaction from "@/components/ResultPage/components/satisfaction";
 import TestimonialSection from "@/components/ResultPage/components/testimonialSection";
 import WhyTrustUs from "@/components/ResultPage/components/whyTrust";
+import Footer from "@/components/SciaticaLandingPage/components/footer";
 import TopBanner from "@/components/SciaticaLandingPage/components/topBanner";
 import { sourceSansPro } from "@/fonts/fonts";
 import React from "react";
@@ -16,6 +18,8 @@ const Result = () => {
       <WhyTrustUs />
       <MeetDrJeff/>
       <TestimonialSection />
+      <Satisfaction/>
+      <Footer/>
     </main>
   );
 };
