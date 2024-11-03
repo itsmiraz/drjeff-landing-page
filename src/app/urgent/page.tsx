@@ -1,5 +1,6 @@
 import TopBanner from "@/components/SciaticaLandingPage/components/topBanner";
 import UrgentHero from "@/components/urgentPage/hero";
+import Testimonials from "@/components/urgentPage/testimonials";
 import { sourceSansPro } from "@/fonts/fonts";
 import React from "react";
 
@@ -10,6 +11,7 @@ const Urgent = () => {
     >
       <TopBanner />
       <UrgentHero />
+      <Testimonials/>
     </main>
   );
 };
