@@ -13,3 +13,8 @@
     box-shadow: 20px 24px 84px 0px #0000001A;
 
   }
+
+  .why-choose-use-card-layer-blur{
+    backdrop-filter: blur(40px)
+
+  }
