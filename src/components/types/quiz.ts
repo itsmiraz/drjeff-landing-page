@@ -12,4 +12,4 @@ export interface QuizQuestion {
     completed: boolean;
   }
   
-  export type SalesPageType = 'acute' | 'chronic';
+  // export type SalesPageType = 'acute' | 'chronic';

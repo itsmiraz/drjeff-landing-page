@@ -1,8 +1,8 @@
-import Hero from "@/components/ResultPage/hero";
-import MeetDrJeff from "@/components/ResultPage/meetDrJeff";
-import Satisfaction from "@/components/ResultPage/satisfaction";
-import TestimonialSection from "@/components/ResultPage/testimonialSection";
-import WhyTrustUs from "@/components/ResultPage/whyTrust";
+import Hero from "@/components/salesProduct/hero";
+import MeetDrJeff from "@/components/salesProduct/meetDrJeff";
+import Satisfaction from "@/components/salesProduct/satisfaction";
+import TestimonialSection from "@/components/salesProduct/testimonialSection";
+import WhyTrustUs from "@/components/salesProduct/whyTrust";
 import Footer from "@/components/SciaticaLandingPage/components/footer";
 import TopBanner from "@/components/SciaticaLandingPage/components/topBanner";
 import { sourceSansPro } from "@/fonts/fonts";
@@ -16,10 +16,10 @@ const Result = () => {
       <TopBanner />
       <Hero />
       <WhyTrustUs />
-      <MeetDrJeff/>
-       <TestimonialSection />
-    <Satisfaction/>
-      <Footer/> 
+      <MeetDrJeff />
+      <TestimonialSection />
+      <Satisfaction />
+      <Footer />
     </main>
   );
 };

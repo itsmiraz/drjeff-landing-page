@@ -1,13 +1,14 @@
+"use client";
 import { plantinMTPro } from "@/fonts/fonts";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import StarterKitImage from "@/assets/images/urgent-starterkit.png";
 import LineGraphic from "@/assets/icons/LineGraphicLarge.svg";
 import LeftArrow from "@/assets/icons/LeftArrow.svg";
 import UnderLine from "@/assets/icons/RoundedUnderLine.svg";
-
+import { motion } from "framer-motion";
 import LeftArrowCustom from "@/assets/icons/LeftArrowCustom.svg";
-const UrgentHero = () => {
+const SalesCtaHero = () => {
   return (
     <div>
       <main className="flex flex-col overflow-hidden rounded-none">
@@ -34,22 +35,23 @@ const UrgentHero = () => {
                         <UnderLine />
                       </span>
                     </span>{" "}
-                    Your sciatica <br  className="md:block hidden" /> needs immediate <br  className="md:block hidden" /> attention
+                    Your sciatica <br className="md:block hidden" /> needs
+                    immediate <br className="md:block hidden" /> attention
                   </h1>
                   <p className="mt-[17px] font-sourceSansPro text-[18px] md:text-xl leading-7 text-[#1B365D] max-md:max-w-full">
                     Don't let another day of severe pain control your life. Our
                     revolutionary DOSAE™ method can help - without surgery.
                   </p>
-              <div className="md:block hidden">
-              <QuizResults />
-              </div>
+                  <div className="md:block hidden">
+                    <QuizResults />
+                  </div>
                 </div>
               </div>
               <StarterKit />
             </div>
             <div className="block md:hidden">
               <QuizResults />
-              </div>
+            </div>
           </div>
         </section>
       </main>
@@ -57,22 +59,43 @@ const UrgentHero = () => {
   );
 };
 
-export default UrgentHero;
+export default SalesCtaHero;
 
 const QuizResults = () => {
+  // const router = useRouter()
+  const [results, setResults] = useState<string | null>(null);
+
+  useEffect(() => {
+    // Get results from localStorage
+    const savedResults = localStorage.getItem("quizResults");
+
+    if (!savedResults) {
+      window.location.href = "/";
+      return;
+    }
+
+    setResults(JSON.parse(savedResults));
+  }, []);
+
+  const progress = Number(results) * 10;
   return (
     <>
       <section className="flex flex-col pl-[30px] py-[40px] mt-[50px] max-w-full bg-white border-2 border-solid border-gray-500 border-opacity-20 rounded-[40px] startKitShadow w-[413px] max-md:px-5 max-md:mt-10">
         <h2 className="self-center pr-[30px] font-sourceSansPro  text-[30px] md:text-4xl font-bold leading-none text-center text-[#7C9885]">
           Your quiz results
         </h2>
-       <div className="pr-[30px]">
-       <div className="flex flex-col items-start mt-7 bg-slate-100 rounded-[100px] max-md:pr-5">
-          <div className="flex shrink-0 h-2.5 bg-[#7C9885] rounded-[100px_0px_0px_100px] w-[85px]" />
+        <div className="pr-[30px]">
+          <div className=" h-2  rounded-full flex flex-col items-start mt-7 bg-slate-100 max-md:pr-5">
+            <motion.div
+              initial={{ width: 0 }}
+              animate={{ width: `${progress}%` }}
+              className="h-full bg-[#7C9885] rounded-full"
+              transition={{ duration: 0.5 }}
+            />
+          </div>
         </div>
-       </div>
         <p className="self-center pr-[30px]  font-sourceSansPro  mt-5 text-2xl font-bold leading-none text-center text-[#D4AA4F]">
-          Score: 6/10
+          Score: {results}/10
         </p>
         <p className="mt-5 mr-5  font-sourceSansPro text-lg leading-6 text-[#1B365D] max-md:mr-2.5">
           Your sciatica score indicates severe symptoms that require prompt,
@@ -97,14 +120,14 @@ const StarterKit = () => {
               Attention Now
             </p>
           </div>
-        <div className="w-full">
-        <Image
-            loading="lazy"
-            src={StarterKitImage}
-            alt="Sciatica relief starter kit"
-            className="w-full"
-          />
-        </div>
+          <div className="w-full">
+            <Image
+              loading="lazy"
+              src={StarterKitImage}
+              alt="Sciatica relief starter kit"
+              className="w-full"
+            />
+          </div>
         </div>
         <LineGraphic />
 

@@ -16,9 +16,9 @@ export default function SciaticaLandingPage() {
     >
       <TopBanner />
       <Hero />
-     <RecognizedBy />
-   <WhyQuizMatters />
-      <Footer /> 
+      <RecognizedBy />
+      <WhyQuizMatters />
+      <Footer />
     </div>
   );
 }
