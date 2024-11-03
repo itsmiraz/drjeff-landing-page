@@ -15,7 +15,7 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = () => {
         "I thought I'd have to live with the pain forever. Dr. Jeff's techniques changed everything!",
       name: "Sarah M",
       description:
-        "Tony once lived dictated by severe sciatic pain, which made even simple postures a calculated struggle. Despite exploring numerous treatments from yoga to chiropractic care, relief was fleeting—until he visited Dr. Jeff at the Midwest Disc Clinic.",
+          `"Tony once lived dictated by severe sciatic pain, which made even simple postures a calculated struggle. Despite exploring numerous treatments from yoga to chiropractic care, relief was fleeting—until he visited Dr. Jeff at the Midwest Disc Clinic."`,
     },
     {
       imageSrc:
@@ -26,7 +26,7 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = () => {
         "I thought I'd have to live with the pain forever. Dr. Jeff's techniques changed everything!",
       name: "TJ",
       description:
-        "Previously suffering from severe pain and discomfort, which left him hunched and despondent, TJ felt trapped by his condition. After numerous unsuccessful visits to chiropractors, he was skeptical about trying another treatment.",
+       ` "Previously suffering from severe pain and discomfort, which left him hunched and despondent, TJ felt trapped by his condition. After numerous unsuccessful visits to chiropractors, he was skeptical about trying another treatment."`,
     },
   ];
 

@@ -11,19 +11,30 @@ const WhyTrustUs = () => {
       </h2>
       <ul className="flex md:flex-row gap-y-[40px] flex-col gap-x-[51px] pt-[45px] justify-start md:justify-center items-start md:items-center">
         <li className="flex   gap-x-[20px] justify-center items-center">
-          <Develop />
-          <h3 className="text-[20px] font-bold text-white  font-plantinMTpro leading-[24px] font-serif">Developed by  Dr. Jeff <br /> Garofalo, 22+ year spine <br /> expert.</h3>
+          <div>
+            <Develop />
+          </div>
+          <h3 className="text-[20px] font-bold text-white  font-plantinMTpro leading-[24px] font-serif">
+            Developed by Dr. Jeff <br /> Garofalo, 22+ year spine <br /> expert.
+          </h3>
         </li>
         <li className="flex  gap-x-[20px] justify-center items-center">
-          <Patient />
-          <h3 className="text-[20px] leading-[24px] font-bold text-white  font-plantinMTpro font-serif">Used successfully by <br /> thousands of patients.</h3>
+          <div>
+            <Patient />
+          </div>
+          <h3 className="text-[20px] leading-[24px] font-bold text-white  font-plantinMTpro font-serif">
+            Used successfully by <br /> thousands of patients.
+          </h3>
         </li>
         <li className="flex  gap-x-[20px] justify-center items-center">
-          <Drug />
-          <h3 className="text-[20px] leading-[24px] font-bold  text-white font-plantinMTpro font-serif">Non-invasive, drug-free <br /> methods.</h3>
+          <div>
+            <Drug />
+          </div>
+          <h3 className="text-[20px] leading-[24px] font-bold  text-white font-plantinMTpro font-serif">
+            Non-invasive, drug-free <br /> methods.
+          </h3>
         </li>
       </ul>
-
     </div>
   );
 };

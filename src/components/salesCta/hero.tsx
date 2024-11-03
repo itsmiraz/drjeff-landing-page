@@ -154,7 +154,7 @@ const StarterKit = () => {
         </ul>
 
         <div className="border mt-[20px] rounded-[20px] py-[14px] px-[20px] md:px-[32px] border-dashed border-[#A65D57] bg-[#F5F7F9]">
-          <p className="text-primaryColor whitespace-nowrap  text-[16px] font-semibold font-sourceSansPro">
+          <p className="text-primaryColor  text-[16px] font-semibold font-sourceSansPro">
             🔥 Limited Emergency Slots This Week
           </p>
           <p className="text-primaryColor text-[16px]  font-semibold font-sourceSansPro">

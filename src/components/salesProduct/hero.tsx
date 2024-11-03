@@ -100,7 +100,7 @@ const QuizResults = () => {
 
 const StarterKit = () => {
   return (
-    <aside className="flex mt-20 max-w-[414px] flex-col ml-5  max-md:ml-0 max-md:w-full">
+    <aside className="flex md:  mt-20 max-w-[414px] flex-col ml-5  max-md:ml-0 max-md:w-full">
       <div className="flex overflow-hidden rounded-[40px] relative px-[20px] py-[30px] md:p-[30px] bg-white startKitShadow flex-col w-full font-bold max-md:mt-10">
         <div className="flex gap-[5px] md:items-center items-start md:gap-[15px] justify-between">
           <div className="flex flex-col">

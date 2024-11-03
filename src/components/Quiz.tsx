@@ -152,7 +152,7 @@ export default function Quiz() {
                 (currentQuestion.type === "email" && !quizState.email) ||
                 (currentQuestion.type === "name" && !quizState.name)
               }
-              className="w-full md:h-[50px] bg-[#D4AA4F] hover:bg-[#c29a45] leading-[24px] text-white px-[69px] py-[12px] font-bold text-[16px] rounded-full"
+              className="w-full whitespace-nowrap md:h-[50px] bg-[#D4AA4F] hover:bg-[#c29a45] leading-[24px] text-white px-[69px] py-[12px] font-bold text-[16px] rounded-full"
             >
               {currentQuestion.type === "email"
                 ? "Send me the results"
