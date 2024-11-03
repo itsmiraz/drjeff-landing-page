@@ -10,7 +10,7 @@ const Testimonials = () => {
         "https://cdn.builder.io/api/v1/image/assets/TEMP/da67b3182f2d4153722dd91bfaf2502c6f1fddc3944e4fca8d890731b0d15c82?placeholderIfAbsent=true&apiKey=0677bc850b87458aa18c31a8695d609c",
       quoteSrc:
         "https://cdn.builder.io/api/v1/image/assets/TEMP/cc3a461bc82001c60a2755d4cac3184aa6056a22ff6824e829bec713c57bd9d3?placeholderIfAbsent=true&apiKey=0677bc850b87458aa18c31a8695d609c",
-      quote: "From wheelchair to walking in 8 weeks!",
+      quote: `"From wheelchair to walking in 8 weeks!"`,
       name: "John D., Verified Patient",
       description:
         `"Tony once lived dictated by severe sciatic pain, which made even simple postures a calculated struggle. Despite exploring numerous treatments from yoga to chiropractic care, relief was fleeting—until he visited Dr. Jeff at the Midwest Disc Clinic."`,
@@ -21,7 +21,7 @@ const Testimonials = () => {
       quoteSrc:
         "https://cdn.builder.io/api/v1/image/assets/TEMP/f6164c396eef0aa259d9ec52270626fdef391f7a092a36fb9caed59b94f8eb06?placeholderIfAbsent=true&apiKey=0677bc850b87458aa18c31a8695d609c",
       quote:
-        "I thought I'd have to live with the pain forever. Dr. Jeff's techniques changed everything!",
+        `"I thought I'd have to live with the pain forever. Dr. Jeff's techniques changed everything!"`,
       name: "Meet:  TJ",
       description:
         `"Previously suffering from severe pain and discomfort, which left him hunched and despondent, TJ felt trapped by his condition. After numerous unsuccessful visits to chiropractors, he was skeptical about trying another treatment."`,
