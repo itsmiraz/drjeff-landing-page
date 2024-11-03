@@ -44,15 +44,15 @@ const WhyChoose = () => {
   ];
 
   return (
-    <div className="bg-[#F5F7F9] pt-[150px] pb-[80px]">
-      <h1 className="text-[40px] text-center font-bold font-plantinMTpro font-serif text-primaryColor">
+    <div className="bg-[#F5F7F9] px-[20px] pt-[60px] md:pt-[150px] pb-[80px]">
+      <h1 className="text-[30px] md:text-[40px] text-center font-bold font-plantinMTpro font-serif text-primaryColor">
         Why choose Midwest Disc Clinic?
       </h1>
-      <div className="pt-[40px] relative pb-[50px] max-w-[1078px] mx-auto relative grid grid-cols-2 place-content-center  place-items-center gap-[30px]">
+      <div className="pt-[40px] relative pb-[50px] max-w-[1078px] mx-auto relative grid  grid-cols-1 gmd:grid-cols-2 place-content-center  place-items-center gap-[30px]">
         {whyChooseData.map((item) => (
           <div className="md:w-[524px] z-30 relative md:h-[274px] overflow-hidden relative  shadow-md p-[20px] rounded-[20px]">
             <div className="z-10 relative min-h-[204px] bg-transparent h-full w-full   rounded-[20px]">
-              <div className="pl-[20px] py-[14px]">
+              <div className="md:pl-[20px] py-[14px]">
                 <h3 className="text-[24px] z-20 relative tracking-tighter  leading-[30px] font-bold font-plantinMTpro font-serif text-primaryColor">
                   {item.title}
                 </h3>
@@ -63,7 +63,7 @@ const WhyChoose = () => {
                         <LeftPointerVector />
                       </div>
 
-                      <p className="text-primaryColor leading-[30px] font-sourceSansPro text-[18px] ">
+                      <p className="text-primaryColor leading-[30px] font-sourceSansPro text-[16px] md:text-[18px] ">
                         {option}
                       </p>
                     </li>
@@ -85,14 +85,14 @@ const WhyChoose = () => {
             />
           </div>
         ))}
-        <div className="w-[300px] h-[300px] absolute transform -translate-x-1/2 -translate-y-1/2 left-1/4 top-1/4">
+        <div className="w-[300px] h-[300px] absolute transform md:-translate-x-1/2 -translate-y-1/2 -left-40 md:left-1/4 top-1/4">
           <BgGlow />
         </div>
       </div>
       <p className="font-sourceSansPro  text-[#1B365D]/80 text-center  text-[18px] font-semibold ">
         Dr. Jeff's unique combination of extensive experience, advanced
         training, and innovative treatment methods makes Midwest Disc Clinic{" "}
-        <br /> the premier choice for severe sciatica cases. Don't trust your
+        <br className="md:block hidden" /> the premier choice for severe sciatica cases. Don't trust your
         spine to anyone less qualified – your quality of life depends on it.
       </p>
     </div>

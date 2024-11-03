@@ -65,8 +65,8 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="bg-primaryColor overflow-hidden relative pb-[60px] pt-[80px]">
-      <div className="max-w-[1078px] mx-auto">
+    <div className="bg-primaryColor overflow-hidden  relative pb-[60px] pt-[80px]">
+      <div className="max-w-[1078px] px-[20px] mx-auto">
         <section
           data-layername="testimonials"
           className="flex flex-col rounded-none"
@@ -94,7 +94,7 @@ const Testimonials = () => {
         </section>
       </div>
       <div className="mt-[50px]">
-        <p className="font-sourceSansPro  text-white text-center font-bold text-2xl ">
+        <p className="font-sourceSansPro  text-white text-center font-bold text-[20px] md:text-2xl ">
           Trusted by{" "}
           <span className="text-[#D4AA4F] relative inline-block">
             1,000+
@@ -105,8 +105,8 @@ const Testimonials = () => {
           Pain-Free Patients
         </p>
       </div>
-      <Image className="absolute w-[160px] left-10 top-0" src={FLines} alt=""/>
-      <Image className="absolute w-[160px] right-10 top-0" src={FLines} alt=""/>
+      <Image className="absolute  md:block hidden w-[160px] left-10 top-0" src={FLines} alt=""/>
+      <Image className="absolute md:block hidden  w-[160px] right-10 top-0" src={FLines} alt=""/>
     </div>
   );
 };
@@ -131,11 +131,11 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   return (
     <article
       data-layername="column"
-      className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full"
+      className="flex flex-col overflow-hidden w-6/12 max-md:ml-0 max-md:w-full"
     >
       <div
         data-layername="bg"
-        className="flex flex-col grow pb-10 w-full bg-white rounded-[40px] shadow-[0px_30px_60px_rgba(189,189,189,0.16)] max-md:mt-8 max-md:max-w-full"
+        className="flex flex-col  overflow-hidden grow pb-10 w-full bg-white rounded-[40px] shadow-[0px_30px_60px_rgba(189,189,189,0.16)] max-md:mt-8 max-md:max-w-full"
       >
         <div className="flex relative flex-col items-start px-4 pt-40 pb-4 w-full rounded-none min-h-[240px] max-md:pt-24 max-md:pr-5 max-md:max-w-full">
           <img
