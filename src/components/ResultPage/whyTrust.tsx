@@ -2,10 +2,12 @@ import React from "react";
 import Develop from "@/assets/icons/Develop.svg";
 import Patient from "@/assets/icons/Patient.svg";
 import Drug from "@/assets/icons/Drug.svg";
+import Lines from '@/assets/images/lines.png'
+import Image from "next/image";
 
 const WhyTrustUs = () => {
   return (
-    <div className="bg-[#1B365D] pt-[50px] pb-[79px] ">
+    <div className="bg-[#1B365D] relative pt-[50px] pb-[79px] ">
       <h2 className="text-[40px] font-bold text-white text-center font-plantinMTpro font-serif">
         Why trust our approach?
       </h2>
@@ -23,6 +25,8 @@ const WhyTrustUs = () => {
           <h3 className="text-[20px] leading-[24px] font-bold  text-white font-plantinMTpro font-serif">Non-invasive, drug-free <br /> methods.</h3>
         </li>
       </ul>
+
+      {/* <Image className="left-0 top-0 absolute  h-full" src={Lines} alt=""/>  */}
     </div>
   );
 };

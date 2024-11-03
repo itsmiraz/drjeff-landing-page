@@ -1,7 +1,8 @@
 import React from "react";
 import PlayIcon from "@/assets/icons/VideoPlayIcon.svg";
 import BrownUnderline from "@/assets/icons/BrownUnderLine.svg";
-
+import FLines from '@/assets/images/f-lines.png'
+import Image from "next/image";
 const Testimonials = () => {
   const testimonials = [
     {
@@ -64,7 +65,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="bg-primaryColor pb-[60px] pt-[80px]">
+    <div className="bg-primaryColor overflow-hidden relative pb-[60px] pt-[80px]">
       <div className="max-w-[1078px] mx-auto">
         <section
           data-layername="testimonials"
@@ -104,6 +105,8 @@ const Testimonials = () => {
           Pain-Free Patients
         </p>
       </div>
+      <Image className="absolute w-[160px] left-10 top-0" src={FLines} alt=""/>
+      <Image className="absolute w-[160px] right-10 top-0" src={FLines} alt=""/>
     </div>
   );
 };
