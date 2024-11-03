@@ -17,9 +17,9 @@ const Result = () => {
       <Hero />
       <WhyTrustUs />
       <MeetDrJeff/>
-      <TestimonialSection />
-      <Satisfaction/>
-      <Footer/>
+       <TestimonialSection />
+    <Satisfaction/>
+      <Footer/> 
     </main>
   );
 };

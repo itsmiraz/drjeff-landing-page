@@ -7,7 +7,7 @@ import LeftArrow from "@/assets/icons/LeftArrow.svg";
 const Hero = () => {
   return (
     <div>
-      <main className="flex flex-col rounded-none">
+      <main className="flex overflow-hidden flex-col rounded-none">
         <section className="flex relative flex-col items-center px-16 pt-0.5 pb-36 w-full min-h-[842px] max-md:px-5 max-md:pb-24 max-md:max-w-full">
           <img
             loading="lazy"
@@ -15,13 +15,13 @@ const Hero = () => {
             alt=""
             className="object-cover absolute inset-0 size-full"
           />
-          <div className="relative mb-0 max-w-full w-[1149px] max-md:mb-2.5">
+          <div className="relative mb-0 max-w-full w-full md:w-[1149px] ">
             <div className="flex gap-5 max-md:flex-col">
               <div className="flex flex-col w-[63%] max-md:ml-0 max-md:w-full">
                 <div className="flex relative flex-col items-start w-full max-md:mt-10 max-md:max-w-full">
                   {/* <Header /> */}
                   <h1
-                    className={`${plantinMTPro.variable} font-serif self-stretch mt-20 text-5xl font-bold leading-[60px] text-blue-950 max-md:mt-10 max-md:max-w-full max-md:text-4xl max-md:leading-[53px]`}
+                    className={`${plantinMTPro.variable} font-serif  mt-[60px] md:mt-20 text-[40px] leading-[46px] md:text-5xl font-bold md:leading-[60px] text-primaryColor`}
                   >
                     Ease your sciatica pain at home: Your personalized relief
                     plan.
@@ -30,13 +30,20 @@ const Hero = () => {
                     Discover how to manage your mild to moderate sciatica
                     symptoms without expensive treatments or risky procedures.
                   </p>
-                  <QuizResults />
+                <div className="md:block hidden">
+                <QuizResults />
+                </div>
                 </div>
               </div>
               <StarterKit />
             </div>
+            <div className="block md:hidden">
+                <QuizResults />
+                </div>
           </div>
+          
         </section>
+
       </main>
     </div>
   );
@@ -70,10 +77,10 @@ const QuizResults = () => {
 const StarterKit = () => {
   return (
     <aside className="flex mt-20 max-w-[414px] flex-col ml-5  max-md:ml-0 max-md:w-full">
-      <div className="flex rounded-[40px] relative p-[30px] bg-white startKitShadow flex-col w-full font-bold max-md:mt-10">
-        <div className="flex gap-[15px] justify-between">
+      <div className="flex overflow-hidden rounded-[40px] relative px-[20px] py-[30px] md:p-[30px] bg-white startKitShadow flex-col w-full font-bold max-md:mt-10">
+        <div className="flex gap-[5px] md:items-center items-start md:gap-[15px] justify-between">
           <div className="flex flex-col">
-            <h2 className="text-2xl font-plantinMTpro font-serif  leading-8 text-[#1B365D]">
+            <h2 className="text-xl md:text-2xl font-plantinMTpro font-serif  leading-[26px] md:leading-8 text-[#1B365D]">
               Introducing the "Sciatica relief starter kit"
             </h2>
             <div className="flex gap-[11px] self-start items-center mt-5 leading-none whitespace-nowrap">
@@ -92,7 +99,9 @@ const StarterKit = () => {
             className="object-contain shrink-0 w-36 max-w-full rounded-none aspect-[1.11]"
           />
         </div>
-        <LineGraphic />
+      <div className="md:w-full w-[297px] overflow-hidden">
+      <LineGraphic />
+      </div>
 
         <h3 className="self-start mt-2 underline text-lg leading-none text-[#7C9885]">
           What's inside:

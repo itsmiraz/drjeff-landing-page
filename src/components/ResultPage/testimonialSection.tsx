@@ -67,25 +67,25 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = () => {
   ];
 
   return (
-    <div className="max-w-[1078px] mx-auto">
+    <div className="max-w-[1078px] pt-[60px] md:pt-0 mx-auto">
       <section
         data-layername="testimonials"
         className="flex flex-col rounded-none"
       >
         <h2
           data-layername="lifeChangedPainRelievedHearOurPatientsStories"
-          className="z-10 self-center text-4xl font-bold leading-none text-center text-blue-950 max-md:max-w-full"
+          className="z-10 self-center text-[36px] md:text-4xl font-plantinMTpro font-serif font-bold leading-[42px] md:leading-none text-center text-primaryColor max-md:max-w-full"
         >
           Life changed, Pain relieved: Hear our patient's stories
         </h2>
-        <div className="mt-12 w-full max-md:mt-10 max-md:max-w-full">
+        <div className="mt-10 md:mt-12 px-[20px] w-full max-md:mt-10 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col">
             {testimonials.map((testimonial, index) => (
               <TestimonialCard key={index} {...testimonial} />
             ))}
           </div>
         </div>
-        <div className="mt-8 w-full max-md:max-w-full">
+        <div className="mt-8 px-[20px]  w-full max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col">
             {reviews.map((review, index) => (
               <ReviewCard key={index} {...review} />
@@ -121,9 +121,9 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
     >
       <div
         data-layername="bg"
-        className="flex flex-col grow pb-10 w-full bg-white rounded-[40px] shadow-[0px_30px_60px_rgba(189,189,189,0.16)] max-md:mt-8 max-md:max-w-full"
+        className="flex flex-col overflow-hidden  grow pb-10 w-full bg-white rounded-[40px] shadow-[0px_30px_60px_rgba(189,189,189,0.16)] max-md:mt-8 max-md:max-w-full"
       >
-        <div className="flex relative flex-col items-start px-4 pt-40 pb-4 w-full rounded-none min-h-[240px] max-md:pt-24 max-md:pr-5 max-md:max-w-full">
+        <div className="flex overflow-hidden relative flex-col items-start px-4 pt-40 pb-4 w-full rounded-none min-h-[240px] max-md:pt-24 max-md:pr-5 max-md:max-w-full">
           <img
             loading="lazy"
             src={imageSrc}

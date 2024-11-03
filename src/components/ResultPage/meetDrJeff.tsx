@@ -11,11 +11,11 @@ const MeetDrJeff = () => {
     "Helped thousands avoid risky surgeries and regain their lives",
   ];
   return (
-    <div className="my-[150px] flex justify-center items-center">
-      <div className="max-w-[1077px] gap-x-[130px] flex justify-between items-center mx-auto py-[43px] px-[40px] rounded-[40px] bg-[#F5F7F9]">
-        <div className="w-[50%]">
+    <div className="md:py-[150px] flex justify-center items-center">
+      <div className="max-w-[1077px] gap-y-[20px] gap-x-[130px] flex md:flex-row flex-col justify-between items-center mx-auto py-[43px] px-[30px] md:px-[40px] rounded-[40px] bg-[#F5F7F9]">
+        <div className="w-full  md:w-[50%]">
           <p className="font-plantinMTpro font-serif text-[20px] text-primaryColor font-bold ">Meet Your Sciatica Expert:</p>
-          <h3 className="font-plantinMTpro font-serif text-[40px] text-primaryColor font-bold">Dr. Jeff Garofalo</h3>
+          <h3 className="font-plantinMTpro font-serif text-[34px] md:text-[40px] text-primaryColor font-bold">Dr. Jeff Garofalo</h3>
 
           <ul className="space-y-[10px] mt-[23px]">
             {data.map((item, i) => (
@@ -24,19 +24,25 @@ const MeetDrJeff = () => {
                <HandIcon />
                </div>
                  
-                <p className="text-lg leading-[18px] font-sourceSansPro text-primaryColor">{item}</p>
+                <p className="text-[16px] md:text-lg leading-[18px] font-sourceSansPro text-primaryColor">{item}</p>
               </li>
             ))}
           </ul>
-          <p className="text-base mt-[89px] font-sourceSansPro text-primaryColor ">
+          <p className="text-base md:block hidden mt-[89px] font-sourceSansPro text-primaryColor ">
             Dr. Jeff's unique approach combines cutting-edge technology with a
             deep understanding of spinal mechanics. His expertise in advanced
             MRI analysis allows for precise diagnosis and targeted treatment
             plans, even for complex cases.
           </p>
         </div>
-        <div className="relative  w-[373px]">
+        <div className="relative  w-full md:w-[373px]">
           <Image src={DrJeff} className="w-full h-full" alt="" />
+          <p className="text-base block md:hidden mt-[20px] font-sourceSansPro text-primaryColor ">
+            Dr. Jeff's unique approach combines cutting-edge technology with a
+            deep understanding of spinal mechanics. His expertise in advanced
+            MRI analysis allows for precise diagnosis and targeted treatment
+            plans, even for complex cases.
+          </p>
         </div>
       </div>
     </div>

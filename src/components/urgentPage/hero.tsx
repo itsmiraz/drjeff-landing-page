@@ -10,7 +10,7 @@ import LeftArrowCustom from "@/assets/icons/LeftArrowCustom.svg";
 const UrgentHero = () => {
   return (
     <div>
-      <main className="flex flex-col rounded-none">
+      <main className="flex flex-col overflow-hidden rounded-none">
         <section className="flex relative flex-col items-center px-16 pt-0.5 pb-36 w-full min-h-[842px] max-md:px-5 max-md:pb-24 max-md:max-w-full">
           <img
             loading="lazy"
