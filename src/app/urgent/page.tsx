@@ -1,4 +1,6 @@
+import Footer from "@/components/SciaticaLandingPage/components/footer";
 import TopBanner from "@/components/SciaticaLandingPage/components/topBanner";
+import CTA from "@/components/urgentPage/cta";
 import Faq from "@/components/urgentPage/faq";
 import UrgentHero from "@/components/urgentPage/hero";
 import Satisfaction from "@/components/urgentPage/satisfaction";
@@ -22,6 +24,8 @@ const Urgent = () => {
       <SuccessStory/>
       <StateMent/>
       <Faq/>
+      <CTA/>
+      <Footer/>
     </main>
   );
 };
