@@ -18,14 +18,14 @@ const Urgent = () => {
     >
       <TopBanner />
       <UrgentHero />
-      <Testimonials/>
+      {/* <Testimonials/>
       <WhyChoose/>
       <Satisfaction/>
       <SuccessStory/>
       <StateMent/>
       <Faq/>
       <CTA/>
-      <Footer/>
+      <Footer/> */}
     </main>
   );
 };

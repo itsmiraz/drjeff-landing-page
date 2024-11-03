@@ -2,8 +2,6 @@ import React from "react";
 import Develop from "@/assets/icons/Develop.svg";
 import Patient from "@/assets/icons/Patient.svg";
 import Drug from "@/assets/icons/Drug.svg";
-import Lines from '@/assets/images/lines.png'
-import Image from "next/image";
 
 const WhyTrustUs = () => {
   return (
@@ -26,7 +24,6 @@ const WhyTrustUs = () => {
         </li>
       </ul>
 
-      {/* <Image className="left-0 top-0 absolute  h-full" src={Lines} alt=""/>  */}
     </div>
   );
 };
