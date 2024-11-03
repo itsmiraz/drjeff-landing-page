@@ -44,11 +44,11 @@ const WhyChoose = () => {
   ];
 
   return (
-    <div className="bg-[#F5F7F9] px-[20px] pt-[60px] md:pt-[150px] pb-[80px]">
+    <div className="bg-[#F5F7F9] overflow-hidden px-[20px] pt-[60px] md:pt-[150px] pb-[80px]">
       <h1 className="text-[30px] md:text-[40px] text-center font-bold font-plantinMTpro font-serif text-primaryColor">
         Why choose Midwest Disc Clinic?
       </h1>
-      <div className="pt-[40px] relative pb-[50px] max-w-[1078px] mx-auto relative grid  grid-cols-1 gmd:grid-cols-2 place-content-center  place-items-center gap-[30px]">
+      <div className="pt-[40px] relative pb-[50px] max-w-[1078px] mx-auto relative grid  grid-cols-1 md:grid-cols-2 place-content-center  place-items-center gap-[30px]">
         {whyChooseData.map((item) => (
           <div className="md:w-[524px] z-30 relative md:h-[274px] overflow-hidden relative  shadow-md p-[20px] rounded-[20px]">
             <div className="z-10 relative min-h-[204px] bg-transparent h-full w-full   rounded-[20px]">

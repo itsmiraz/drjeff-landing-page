@@ -32,9 +32,9 @@ const Faq = () => {
   ];
 
   return (
-    <div className="bg-[#F5F7F9] pt-[150px] pb-[80px] ">
+    <div className="bg-[#F5F7F9] px-[20px] pt-[150px] pb-[80px] ">
       <div>
-        <h3 className="text-center text-primaryColor font-bold text-[40px] leading-[44px]  font-plantinMTpro font-serif">
+        <h3 className="text-center text-primaryColor font-bold text-[36px] md:text-[40px] leading-[44px]  font-plantinMTpro font-serif">
           Frequently asked questions
         </h3>
         <div className="mt-[51px] max-w-[1078px] mx-auto  space-y-[20px]">

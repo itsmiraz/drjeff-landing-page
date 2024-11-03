@@ -23,9 +23,9 @@ const Urgent = () => {
         <Satisfaction/>
       <SuccessStory/>
      <StateMent/>
-     {/*  <Faq/>
-      <CTA/>
-      <Footer/> */}
+     <Faq/>
+     <CTA/>
+      <Footer/>
     </main>
   );
 };
